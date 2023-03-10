@@ -1,0 +1,359 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VB_TodoApp2
+</name>
+</assembly>
+<members>
+<member name="T:VB_TodoApp2.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:VB_TodoApp2.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:VB_TodoApp2.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:VB_TodoApp2.CommonProc.IsFitInText(System.String,System.Int64)">
+ <summary>
+ 文字列がおさまっているかどうか?
+ </summary>
+ 2023/02/27
+</member>
+<member name="M:VB_TodoApp2.CommonProc.IsInputed(System.String)">
+ <summary>
+ 入力されているかどうか?
+ </summary>
+ 2023/03/03
+</member>
+<member name="M:VB_TodoApp2.CommonProc.IsFuture(System.DateTime)">
+ <summary>
+ 未来日かどうか?
+ </summary>
+ 2023/03/03
+</member>
+<member name="M:VB_TodoApp2.CommonProc.HideAndOpen(System.Windows.Forms.Form,System.Windows.Forms.Form)">
+ <summary>
+ 画面遷移
+ </summary>
+ 2023/02/27
+</member>
+<member name="M:VB_TodoApp2.CommonProc.SetCmb(System.Windows.Forms.ComboBox,System.Collections.Generic.List{System.String})">
+ <summary>
+ コンボボックスに値を設定
+ </summary>
+ 2023/02/27
+</member>
+<member name="M:VB_TodoApp2.DB.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ 2023/02/23
+</member>
+<member name="M:VB_TodoApp2.DB.OpenCon(System.String)">
+ <summary>
+ コネクションを開く
+ </summary>
+ 2023/02/23
+</member>
+<member name="M:VB_TodoApp2.DB.BeginTran">
+ <summary>
+ トランザクション開始
+ </summary>
+ 2023/02/23
+</member>
+<member name="M:VB_TodoApp2.DB.Commit">
+ <summary>
+ コミット
+ </summary>
+ 2023/02/23
+</member>
+<member name="M:VB_TodoApp2.DB.RollBack">
+ <summary>
+ ロールバック
+ </summary>
+ 2023/02/23
+</member>
+<member name="M:VB_TodoApp2.DB.ExecuteNonQuery(System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+ <summary>
+ INSERT, UPDATE, DELETE用
+ </summary>
+ 2023/02/23
+</member>
+<member name="M:VB_TodoApp2.DB.ExecuteScalar(System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+ <summary>
+ 実行結果(件数)を取得
+ </summary>
+ 2023/02/23
+</member>
+<member name="M:VB_TodoApp2.DB.ExecuteReader(System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+ <summary>
+ SELECT用
+ </summary>
+ 2023/02/24
+</member>
+<member name="M:VB_TodoApp2.DB.GetDt(System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+ <summary>
+ SELECT用
+ </summary>
+ 2023/02/24
+</member>
+<member name="M:VB_TodoApp2.DB.DisposeAllObject">
+ <summary>
+ 全てのオブジェクトを破棄
+ </summary>
+ 2023/02/24
+</member>
+<member name="M:VB_TodoApp2.DB.Finalize">
+ <summary>
+ デストラクタ
+ </summary>
+ 2023/02/24
+</member>
+<member name="M:VB_TodoApp2.frmControlAuthority.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/02
+</member>
+<member name="M:VB_TodoApp2.frmControlAuthority.SetDataSource">
+ <summary>
+ データソース設定
+ </summary>
+ 2023/03/02
+</member>
+<member name="M:VB_TodoApp2.frmMain.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/02/27
+</member>
+<member name="M:VB_TodoApp2.frmMain.SetBtnVisible">
+ <summary>
+ ボタンの表示非表示を設定
+ </summary>
+ 2023/02/27
+</member>
+<member name="M:VB_TodoApp2.frmReleaseLock.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/02
+</member>
+<member name="M:VB_TodoApp2.frmReleaseLock.SetDataSource">
+ <summary>
+ データソース設定
+ </summary>
+ 2023/03/02
+</member>
+<member name="M:VB_TodoApp2.frmInsertTask.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/03
+</member>
+<member name="M:VB_TodoApp2.frmTasks.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/06
+</member>
+<member name="M:VB_TodoApp2.frmTasks.SetDataSource">
+ <summary>
+ データソースの設定
+ </summary>
+ 2023/03/06
+</member>
+<member name="M:VB_TodoApp2.frmTasks.SetSearchDataSource(System.String)">
+ <summary>
+ データソースの設定(検索用)
+ </summary>
+ 2023/03/06
+ TODO：サブルーチン名改善の余地あり
+</member>
+<member name="M:VB_TodoApp2.frmUsers.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/01
+</member>
+<member name="M:VB_TodoApp2.frmUsers.SetDataSource">
+ <summary>
+ データソース設定
+ </summary>
+ 2023/03/01
+</member>
+<member name="M:VB_TodoApp2.frmUpdateUser.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/01
+</member>
+<member name="M:VB_TodoApp2.OtherProc.GetPriorityList">
+ <summary>
+ 優先度のリストを取得
+ </summary>
+ 2023/03/03
+</member>
+<member name="M:VB_TodoApp2.OtherProc.PriorityToInt(System.String)">
+ <summary>
+ 優先度をint型に変換
+ </summary>
+ 2023/03/06
+</member>
+<member name="M:VB_TodoApp2.OtherProc.PriorityToString(System.Int32)">
+ <summary>
+ 優先度をstring型に変換
+ </summary>
+ 2023/03/06
+</member>
+<member name="M:VB_TodoApp2.Task.InsertTask(System.String,System.DateTime,System.String,System.String,System.String,System.Int64)">
+ <summary>
+ タスク登録
+ </summary>
+ 2023/03/06
+</member>
+<member name="M:VB_TodoApp2.Task.GetUserTaskList(System.Int64)">
+ <summary>
+ ユーザのタスクリスト取得
+ </summary>
+ 2023/03/06
+</member>
+<member name="M:VB_TodoApp2.Task.DtToTaskList(System.Data.DataTable)">
+ <summary>
+ データをタスクリストに変換する
+ </summary>
+ 2023/03/06
+</member>
+<member name="M:VB_TodoApp2.Task.DeleteTask(System.Int64)">
+ <summary>
+ タスク削除
+ </summary>
+ 2023/03/06
+</member>
+<member name="M:VB_TodoApp2.Task.GetTask(System.Int64)">
+ <summary>
+ タスク情報取得
+ </summary>
+ 2023/03/07
+</member>
+<member name="M:VB_TodoApp2.Task.UpdateTask(System.String,System.DateTime,System.String,System.String,System.String,System.Int64,System.Int64)">
+ <summary>
+ タスク更新
+ </summary>
+ 2023/03/07
+</member>
+<member name="M:VB_TodoApp2.Task.GetSearchResult(System.Int64,System.String)">
+ <summary>
+ 検索用、タスクリスト取得
+ </summary>
+ 2023/03/07
+ TODO：関数名改善の余地あり
+</member>
+<member name="M:VB_TodoApp2.Task.GetSearchCount(System.Int64,System.String)">
+ <summary>
+ 検索用、件数取得
+ </summary>
+ 2023/03/07
+</member>
+<member name="M:VB_TodoApp2.Task.OutputCSV(System.Collections.Generic.List{VB_TodoApp2.TaskData},System.String)">
+ <summary>
+ CSV出力
+ </summary>
+ 2023/03/10
+</member>
+<member name="M:VB_TodoApp2.Task.TaskListToStringList(System.Collections.Generic.List{VB_TodoApp2.TaskData})">
+ <summary>
+ タスクリストを文字列のリストに変換する
+ </summary>
+ 2023/03/10
+</member>
+<member name="M:VB_TodoApp2.User.IsExistsUser(System.String,System.String)">
+ <summary>
+ ユーザが存在するかどうか?
+ </summary>
+ 2023/02/27
+</member>
+<member name="M:VB_TodoApp2.User.IsExistsUserName(System.String)">
+ <summary>
+ ユーザ名が存在するかどうか?
+ </summary>
+ 2023/03/02
+</member>
+<member name="M:VB_TodoApp2.User.GetUserID(System.String,System.String)">
+ <summary>
+ ユーザID取得
+ </summary>
+ 2023/02/27
+</member>
+<member name="M:VB_TodoApp2.User.IsAdmin(System.Int64)">
+ <summary>
+ 管理者かどうか?
+ </summary>
+ 2023/02/27
+</member>
+<member name="M:VB_TodoApp2.User.RegisterUser(System.String,System.String)">
+ <summary>
+ ユーザ登録
+ </summary>
+ 2023/02/27
+</member>
+<member name="M:VB_TodoApp2.User.GetUsers">
+ <summary>
+ ユーザ一覧
+ </summary>
+ 2023/03/01
+</member>
+<member name="M:VB_TodoApp2.User.GetLockedUsers">
+ <summary>
+ ロックされているユーザ取得
+ </summary>
+ 2023/03/03
+</member>
+<member name="M:VB_TodoApp2.User.DeleteUser(System.Int64)">
+ <summary>
+ ユーザ削除
+ </summary>
+ 2023/03/01
+</member>
+<member name="M:VB_TodoApp2.User.GetUser(System.Int64)">
+ <summary>
+ ユーザ情報取得
+ </summary>
+ 2023/03/01
+</member>
+<member name="M:VB_TodoApp2.User.UpdateUser(System.String,System.String,System.Int64)">
+ <summary>
+ ユーザ更新
+ </summary>
+ 2023/03/01
+</member>
+<member name="M:VB_TodoApp2.User.UpdateAuthority(System.Int64,System.Int64)">
+ <summary>
+ 権限更新
+ </summary>
+ 2023/03/02
+</member>
+<member name="M:VB_TodoApp2.User.IsLockedUserName(System.String)">
+ <summary>
+ ロックされているユーザ名かどうか?
+ </summary>
+ 2023/02/27
+</member>
+<member name="M:VB_TodoApp2.User.UpdateLock(System.String,System.Int64)">
+ <summary>
+ ロック状態更新
+ </summary>
+ 2023/03/02
+ TODO: 変数名改善の余地あり(updateIsLock)
+</member>
+</members>
+</doc>
